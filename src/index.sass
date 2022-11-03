@@ -1,0 +1,386 @@
+@import fonts
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+li
+  list-style-type: none
+
+.container
+  height: 100vh
+  display: flex
+  align-items: center
+  justify-content: center
+
+.table
+  font-family: 'Arial', sans-serif
+  border: 1px solid #0D274D
+  line-height: 21px
+  color: #282828
+  display: flex
+
+  @media screen and (max-width: 992px)
+    line-height: 18px
+
+  @media screen and (max-width: 768px)
+    line-height: 13px
+
+  @media screen and (max-width: 500px)
+    flex-direction: column
+    width: 100%
+
+  &__column
+
+    &_sand
+      width: 281px
+
+      @media screen and (max-width: 992px)
+        width: 206px
+
+      @media screen and (max-width: 768px)
+        width: 131px
+
+      @media screen and (max-width: 500px)
+        width: 100%
+
+    &_artez
+      width: 320px
+
+      @media screen and (max-width: 992px)
+        width: 245px
+
+      @media screen and (max-width: 768px)
+        width: 170px
+
+      @media screen and (max-width: 500px)
+        width: 100%
+
+    &_mgbu
+      width: 327px
+
+      @media screen and (max-width: 992px)
+        width: 252px
+
+      @media screen and (max-width: 768px)
+        width: 177px
+
+      @media screen and (max-width: 500px)
+        width: 100%
+
+  &__header
+    font-family: 'Montserrat-Bold', sans-serif
+    font-size: 16px
+    text-align: center
+
+    @media screen and (max-width: 992px)
+      font-size: 13px
+
+    @media screen and (max-width: 768px)
+      font-size: 10px
+
+  &__head
+    background-color: #0D274D
+    color: #fff
+
+    &_sand
+      padding: 15px 65px 15px 45px
+
+      @media screen and (max-width: 992px)
+        padding: 8px 0
+
+      @media screen and (max-width: 768px)
+        padding: 4px 0
+
+    &_artez
+      padding: 15px 50px 15px 55px
+      border-right: 1px solid rgba(255, 255, 255, 0.2)
+      border-left: 1px solid rgba(255, 255, 255, 0.2)
+
+      @media screen and (max-width: 992px)
+        padding: 8px 0
+
+      @media screen and (max-width: 768px)
+        padding: 4px 0
+
+    &_mgbu
+      padding: 15px 84px 15px 101px
+
+      @media screen and (max-width: 992px)
+        padding: 8px 0
+
+      @media screen and (max-width: 768px)
+        padding: 4px 0
+
+.info
+  padding: 17px
+  height: 400px
+
+  @media screen and (max-width: 992px)
+    height: 320px
+
+  @media screen and (max-width: 768px)
+    padding: 10px
+    height: 225px
+
+  @media screen and (max-width: 500px)
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  &_artez
+    border-right: 1px solid #0D274D
+    border-left: 1px solid #0D274D
+
+  &__line
+    display: flex
+    margin-bottom: 10px
+    font-size: 15px
+    
+    @media screen and (max-width: 992px)
+      font-size: 12px
+      margin-bottom: 6px
+
+    @media screen and (max-width: 768px)
+      font-size: 9px
+      margin-bottom: 4px
+
+  &__benefit
+    margin-left: 12px
+    width: 230px
+    color: #000
+
+    @media screen and (max-width: 992px)
+      margin-left: 9px
+
+    @media screen and (max-width: 768px)
+      margin-left: 6px
+
+    @media screen and (max-width: 500px)
+      width: 120px
+
+  &__price
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    position: relative
+
+    &_sand
+      padding: 18px 0 47px
+
+      @media screen and (max-width: 992px)
+        padding: 12px 0 37px
+
+      @media screen and (max-width: 768px)
+        padding: 12px 0 25px
+
+    &_artez
+      padding: 39px 0 47px
+
+      @media screen and (max-width: 992px)
+        padding: 31px 0 37px
+
+      @media screen and (max-width: 768px)
+        padding: 25px 0 25px
+
+      @media screen and (max-width: 500px)
+        padding: 12px 0 25px
+
+    &_mgbu
+      padding: 15px 0 16px
+
+      @media screen and (max-width: 992px)
+        padding: 14px 0 9px
+
+      @media screen and (max-width: 768px)
+        padding: 13px 0 6px
+
+    &:after
+      content: ''
+      display: block
+      height: 1px
+      width: 238px
+      background-color: #00BCEB
+      position: absolute
+      bottom: 0
+
+      @media screen and (max-width: 992px)
+        width: 180px
+
+      @media screen and (max-width: 768px)
+        width: 110px
+
+  &__button
+    color: #fff
+    font-weight: bold
+    width: 250px
+    font-size: 18px
+    background-color: #00BCEB
+    border: none
+    padding: 12px 12px 13px 13px
+    border-radius: 6px
+    cursor: pointer
+    transition: all 0.2s ease-out
+    -webkit-transition: all 0.2s ease-out
+    display: block
+    margin: 19px auto 0
+
+    @media screen and (max-width: 992px)
+      font-size: 12px
+      width: 170px
+      padding: 8px 0 9px
+      border-radius: 4px
+      margin-top: 15px
+
+    @media screen and (max-width: 768px)
+      font-size: 8px
+      width: 110px
+      padding: 5px 0 6px
+      border-radius: 3px
+      margin-top: 10px
+
+    &_middle
+      margin-top: 48px
+
+      @media screen and (max-width: 992px)
+        margin-top: 37px
+
+      @media screen and (max-width: 768px)
+        margin-top: 26px
+
+    &:hover
+      box-shadow: 0 4px 4px rgb(0 0 0 / 27%)
+
+.tick
+  width: 16.23px
+  height: 13.19px
+  margin-top: 3px
+
+  @media screen and (max-width: 992px)
+    width: 13.23px
+    height: 10.19px
+
+  @media screen and (max-width: 768px)
+    width: 10.23px
+    height: 7.19px
+
+.price
+  align-items: center
+  display: flex
+  flex-direction: column
+
+  &__title
+    font-size: 15px
+    margin-bottom: 4px
+
+    @media screen and (max-width: 992px)
+      font-size: 12px
+
+    @media screen and (max-width: 768px)
+      font-size: 9px
+      margin-bottom: 0
+
+  &__value
+    line-height: 23px
+
+    @media screen and (max-width: 992px)
+      line-height: 18px
+
+    @media screen and (max-width: 768px)
+      line-height: 15px
+
+  &__number
+    font-size: 20px
+    font-weight: 900
+    color: #0E9A0B
+
+    @media screen and (max-width: 992px)
+      font-size: 17px
+
+    @media screen and (max-width: 768px)
+      font-size: 12px
+
+  &__units
+    font-size: 14px
+
+    @media screen and (max-width: 992px)
+      font-size: 11px
+
+    @media screen and (max-width: 768px)
+      font-size: 8px
+
+  &_second
+    margin-top: 14px
+
+    @media screen and (max-width: 992px)
+      margin-top: 8px
+
+    @media screen and (max-width: 768px)
+      margin-top: 4px
+
+.depths
+  display: flex
+  margin-top: 14px
+
+  &__first-column
+    margin-right: 30px
+
+    @media screen and (max-width: 992px)
+      margin-right: 28px
+
+    @media screen and (max-width: 768px)
+      margin-right: 15px
+
+  &__item
+    position: relative
+    margin: 0 0 8px 24px
+    font-size: 16px
+    cursor: pointer
+    transition: all 0.2s ease-out
+    -webkit-transition: all 0.2s ease-out
+
+    @media screen and (max-width: 992px)
+      font-size: 12px
+      margin: 0 0 5px 15px
+
+    @media screen and (max-width: 768px)
+      font-size: 8px
+      margin: 0 0 3px 10px
+
+    &:hover
+      color: #00BBEA
+
+    &::after
+      content: ''
+      display: block
+      height: 1px
+      background-color: #282828
+      position: absolute
+      width: 100%
+      bottom: 1px
+      opacity: 1
+      transition: all 0.2s ease-out
+      -webkit-transition: all 0.2s ease-out
+      
+    &:hover::after
+      opacity: 0
+  
+    &::before
+      content: ''
+      position: absolute
+      left: -24px
+      bottom: 3px
+      border: 7.5px solid transparent
+      border-left: 7.5px solid #00BCEB
+
+      @media screen and (max-width: 992px)
+        left: -15px
+        border: 6px solid transparent
+        border-left: 6px solid #00BCEB
+      
+      @media screen and (max-width: 768px)
+        left: -9px
+        border: 4px solid transparent
+        border-left: 4px solid #00BCEB
